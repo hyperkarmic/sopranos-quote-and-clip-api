@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/"
+  to = "/sopranos.json"
+  status = 302
